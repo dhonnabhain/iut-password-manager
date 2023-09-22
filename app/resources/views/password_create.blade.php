@@ -36,7 +36,7 @@
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
             <div class="relative mt-2 rounded-md shadow-sm">
                 <input type="email" name="email" id="email"
-                       class="block w-full rounded-md border-0 py-1.5 pr-10 @error('url') text-red-900 placeholder:text-red-300 ring-red-300 focus:ring-red-500 @enderror ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                       class="block w-full rounded-md border-0 py-1.5 pr-10 @error('email') text-red-900 placeholder:text-red-300 ring-red-300 focus:ring-red-500 @enderror ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                        placeholder="you@example.com" value="" aria-invalid="true" aria-describedby="email-error">
                 @error('email')
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
@@ -55,7 +55,7 @@
             <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
             <div class="relative mt-2 rounded-md shadow-sm">
                 <input type="password" name="password" id="password"
-                       class="block w-full rounded-md border-0 py-1.5 pr-10 @error('url') text-red-900 placeholder:text-red-300 ring-red-300 focus:ring-red-500 @enderror ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                       class="block w-full rounded-md border-0 py-1.5 pr-10 @error('password') text-red-900 placeholder:text-red-300 ring-red-300 focus:ring-red-500 @enderror ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                        aria-invalid="true" aria-describedby="password-error">
                 @error('password')
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
