@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     */
     public function __invoke(Request $request)
     {
         return view('dashboard', ['passwords' => Auth::user()->load('passwords')->passwords]);

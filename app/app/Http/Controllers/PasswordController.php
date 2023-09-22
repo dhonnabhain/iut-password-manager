@@ -28,7 +28,7 @@ class PasswordController extends Controller
         # Validation rules according to exercise
         $validator = Validator::make($request->all(), [
             'site' => 'required|string|url',
-            'login' => 'required|string|email',
+            'login' => 'required|string',
             'password' => 'required|string',
         ]);
 
@@ -63,7 +63,7 @@ class PasswordController extends Controller
         # Validation rules according to exercise
         $validator = Validator::make($request->all(), [
             'site' => 'required|string|url',
-            'login' => 'required|string|email',
+            'login' => 'required|string',
             'password' => 'required|string',
         ]);
 
